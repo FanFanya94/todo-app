@@ -1,0 +1,6 @@
+buy
+sell
+print
+kick
+poop
+BONITA
