@@ -4,3 +4,6 @@ print
 kick
 poop
 BONITA
+MAMUCHA!
+KIRPIEC
+BOBASYAN!
