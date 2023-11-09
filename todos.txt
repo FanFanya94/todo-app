@@ -1,10 +1,10 @@
 Breaks
 Check
-print
+Box
 Hocha
 poop
 Rupka
-MAMUCHA!
+HERKS
 KIRPIEC
 BOBASYAN!
 Kucha
@@ -12,3 +12,8 @@ Shuks
 Zhuchka
 Barok
 Ruback
+Herka
+Chak
+Krich
+Leks
+Glock
