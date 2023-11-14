@@ -6,6 +6,8 @@ import PySimpleGUI as Sg
 todos = functions.get_list_from_textfile()
 
 # Window elements definition
+Sg.theme("LightBrown3")
+data_time_label = Sg.Text("", key="clock")
 label = Sg.Text("Type in a to-do")
 input_box = Sg.InputText(tooltip="Enter a todo", key="todo")
 add_button = Sg.Button("Add")
@@ -18,16 +20,18 @@ list_box = Sg.Listbox(values=functions.indexate_list(todos), key="list",
 
 # Window definition
 window = Sg.Window("My To-Do App",
-                   layout=[[label, input_box, add_button],
+                   layout=[[data_time_label],
+                           [label, input_box, add_button],
                            [list_box, edit_button, complete_button],
                            [save_button, exit_button]],
                    font=("Helvetica", 20))
 
 # Window run
 while True:
-    event, values = window.read()
-    print(event)
-    print(values)
+    event, values = window.read(timeout=200)
+    window["clock"].update(value=time.strftime("%H:%M:%S %A %d %B"))
+    # print(event)
+    # print(values)
 
     try:
         match event:
